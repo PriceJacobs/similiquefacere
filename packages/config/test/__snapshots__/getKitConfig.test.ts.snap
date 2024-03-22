@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getKitConfig() returns rnx-kit configuration when using a module name 1`] = `
+Object {
+  "bundle": Object {
+    "bundleOutput": "./app.bundle",
+    "entryFile": "./core-entry.js",
+    "id": "core",
+    "platforms": Object {
+      "android": Object {
+        "assetsDest": "./build-out/res",
+      },
+    },
+    "targets": Array [
+      "ios",
+      "android",
+      "macos",
+      "windows",
+    ],
+  },
+}
+`;
+
+exports[`getKitConfig() returns rnx-kit configuration when using an explicit working directory 1`] = `
+Object {
+  "bundle": Object {
+    "bundleOutput": "./app.bundle",
+    "entryFile": "./core-entry.js",
+    "id": "core",
+    "platforms": Object {
+      "android": Object {
+        "assetsDest": "./build-out/res",
+      },
+    },
+    "targets": Array [
+      "ios",
+      "android",
+      "macos",
+      "windows",
+    ],
+  },
+}
+`;
+
+exports[`getKitConfig() returns rnx-kit configuration when using the current working directory 1`] = `
+Object {
+  "bundle": Object {
+    "bundleOutput": "./app.bundle",
+    "entryFile": "./core-entry.js",
+    "id": "core",
+    "platforms": Object {
+      "android": Object {
+        "assetsDest": "./build-out/res",
+      },
+    },
+    "targets": Array [
+      "ios",
+      "android",
+      "macos",
+      "windows",
+    ],
+  },
+}
+`;

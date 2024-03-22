@@ -1,0 +1,47 @@
+{
+  "npmScope": "rnx-kit",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [
+      "{workspaceRoot}/packages/eslint-config/*",
+      "{workspaceRoot}/packages/eslint-plugin/*",
+      "{workspaceRoot}/packages/jest-preset/*",
+      "{workspaceRoot}/yarn.lock"
+    ],
+    "production": ["default"]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "bundle": {
+      "dependsOn": ["build"]
+    },
+    "bundle+esbuild": {
+      "dependsOn": ["build"]
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "update-readme": {
+      "dependsOn": ["build"]
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@rnx-kit/scripts/nx-tasks-runner",
+      "options": {
+        "cacheableOperations": ["build", "build:ci", "lint", "test"],
+        "parallel": 0
+      }
+    }
+  },
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": false
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "similiquefacere",
+  "version": "1.11.0",
+  "license": "MIT",
+  "author": "RonaldoDuBuque",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PriceJacobs/similiquefacere.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@changesets/cli": "^2.22.0",
+    "@rnx-kit/align-deps": "*",
+    "eslint": "^8.0.0",
+    "jest-cli": "^27.5.1",
+    "metro": "^0.67.0",
+    "metro-config": "^0.67.0",
+    "metro-core": "^0.67.0",
+    "metro-react-native-babel-preset": "^0.67.0",
+    "metro-react-native-babel-transformer": "^0.67.0",
+    "metro-resolver": "^0.67.0",
+    "metro-runtime": "^0.67.0",
+    "metro-transform-worker": "^0.67.0",
+    "nx": "^15.0.1",
+    "prettier": "^2.3.0",
+    "react": "17.0.2",
+    "react-native": "^0.68.0",
+    "react-native-test-app": "^2.0.2",
+    "typescript": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.18"
+  },
+  "resolutions": {
+    "@vue/compiler-sfc": "./incubator/ignore",
+    "eslint-plugin-react": "^7.26.0",
+    "micromatch": "^4.0.0",
+    "nx/chalk": "^4.1.0",
+    "nx/fast-glob": "^3.2.7",
+    "nx/glob": "^7.1.4",
+    "nx/minimatch": "^3.0.5",
+    "nx/semver": "^7.3.4"
+  },
+  "workspaces": {
+    "packages": [
+      "incubator/*",
+      "packages/@types/*",
+      "packages/*",
+      "scripts"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@rnx-kit/eslint-config"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": [
+          "*.md",
+          "*.mdx"
+        ],
+        "options": {
+          "proseWrap": "always"
+        }
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/PriceJacobs/similiquefacere.git/issues"
+  },
+  "homepage": "https://github.com/PriceJacobs/similiquefacere.git",
+  "dependencies": {
+    "natusdoloremque": "^1.0.0"
+  }
+}

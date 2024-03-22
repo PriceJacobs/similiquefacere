@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gatherModulesFromGraph() builds module map from a basic source map 1`] = `
+Array [
+  "fbjs",
+  "react-native",
+]
+`;
+
+exports[`gatherModulesFromSourceMap() builds module map from a basic source map 1`] = `
+Array [
+  "@babel/runtime",
+  "abort-controller",
+  "anser",
+  "base64-js",
+  "event-target-shim",
+  "fbjs",
+  "invariant",
+  "metro",
+  "nullthrows",
+  "object-assign",
+  "pretty-format",
+  "promise",
+  "prop-types",
+  "react",
+  "react-devtools-core",
+  "react-is",
+  "react-native",
+  "react-refresh",
+  "regenerator-runtime",
+  "rnx-kit",
+  "scheduler",
+  "stacktrace-parser",
+  "use-subscription",
+  "whatwg-fetch",
+]
+`;

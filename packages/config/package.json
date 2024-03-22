@@ -1,0 +1,56 @@
+{
+  "name": "@rnx-kit/config",
+  "version": "0.5.2",
+  "description": "Define and query information about a kit package",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/rnx-kit",
+    "directory": "packages/config"
+  },
+  "scripts": {
+    "build": "rnx-kit-scripts build",
+    "depcheck": "rnx-kit-scripts depcheck",
+    "format": "rnx-kit-scripts format",
+    "lint": "rnx-kit-scripts lint",
+    "test": "rnx-kit-scripts test"
+  },
+  "dependencies": {
+    "@rnx-kit/console": "^1.0.11",
+    "@rnx-kit/tools-node": "^1.2.7",
+    "lodash": "^4.17.21",
+    "semver": "^7.0.0"
+  },
+  "devDependencies": {
+    "@rnx-kit/metro-plugin-cyclic-dependencies-detector": "*",
+    "@rnx-kit/metro-plugin-duplicates-checker": "*",
+    "@rnx-kit/scripts": "*",
+    "@rnx-kit/tools-react-native": "*",
+    "@types/lodash": "^4.14.172",
+    "@types/metro": "^0.66.0",
+    "@types/node": "^16.0.0",
+    "@types/semver": "^7.0.0",
+    "jest": "^27.0.0",
+    "jest-extended": "^2.0.0"
+  },
+  "depcheck": {
+    "ignoreMatches": [
+      "metro"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@rnx-kit/eslint-config"
+  },
+  "jest": {
+    "preset": "@rnx-kit/scripts",
+    "moduleDirectories": [
+      "node_modules",
+      "test/__fixtures__/node_modules"
+    ],
+    "setupFilesAfterEnv": [
+      "jest-extended/all"
+    ]
+  }
+}
